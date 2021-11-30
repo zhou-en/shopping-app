@@ -14,4 +14,16 @@
       </ol>
     </div>
   </div>
+    <div class="row">
+        <div class="row col-xs-12">
+            <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row col-xs-12">
+            <app-odd *ngFor="let oddNum of oddNumbers" [number]="oddNum"></app-odd>
+            <app-even *ngFor="let evenNum of evenNumber" [number]="evenNum"></app-even>
+        </div>
+    </div>
+
 </div>
